@@ -1,0 +1,6 @@
+# action.yml
+name: 'Check LaTex'
+description: 'Check if main.tex can be compiled'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
