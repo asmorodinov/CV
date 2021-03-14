@@ -1,0 +1,92 @@
+\documentclass{resume}
+
+\begin{document}
+
+\fontfamily{ppl}\selectfont
+
+\noindent
+\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
+{
+    \Large{Александр Смородинов} \newline
+    \small{
+        \clink{
+            \href{mailto:asmorodinov66@gmail.com}{asmorodinov66@gmail.com} \textbf{·} 
+            \href{https://github.com/asmorodinov}{github.com/asmorodinov} \textbf{·} \newline
+            \href{https://t.me/asmorodinov}{telegram: @asmorodinov}
+        } \newline
+        Москва, Россия
+    }
+} & 
+{
+    \hfill
+    \includegraphics[width=2.8cm]{images/gr.png}
+}
+\end{tabularx}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}*{2}{X}@{}}
+% left side %
+{
+    \csection{Опыт работы}{\small
+        \begin{itemize}
+            % item 1 %
+            \item \frcontent{К сожалению, пока что нулевой}{}{}{}
+            
+        \end{itemize}
+    }
+    \csection{Образование}{\small
+        \begin{itemize}
+            % item 1 %
+            \item \frcontent{Студент 2 курса Факультета Компьютерных Наук} {Прикладная Математика и Информатика}{НИУ ВШЭ}{}{2019-2023(год выпуска)}
+        \end{itemize}
+    }
+    \csection{Достижения}{\small
+        \begin{itemize}
+            % item 1 %
+            \item \frcontent{Всероссийская олимпиада школьников по математике}{участник заключительного этапа}{}{2019}
+            % item 2 %
+            \item \frcontent{Турнир Городов (международная математическая олимпиада)}{State of Engineering}{3 диплом}{2019}
+            % item 3 %
+            \item \frcontent{Московская математическая олимпиада школьников}{2 диплом}{}{2019}
+        \end{itemize}
+    }
+} 
+% end left side %
+& 
+% right side %
+{
+    \csection{Навыки}{\small
+        \begin{itemize}
+            \item \textbf{Технологии} \newline
+            {\footnotesize C/C++, GNU assembler x86, Python, Javascript(немного знаю), SQL(тоже немного знаю)}{}{}
+            \item \textbf{Библиотеки} \newline
+            {\footnotesize GLFW, Bullet physics, entt, assimp}{}{}
+        \end{itemize}
+    }
+    \csection{Проекты}{
+        \begin{itemize}
+            \item 3d рендерер с нуля \newline \footnotesize \clink{\href{http://github.com/asmorodinov/3d-renderer-from-scratch}{[github.com/asmorodinov/3d-renderer-from-scratch]}}
+            (dev ветка довольно сильно опережает main ветку) \newline
+            C++
+            \item Клон игры Астероиды \newline \footnotesize \clink{\href{https://asmorodinov.github.io}{[asmorodinov.github.io]}} \newline
+            \footnotesize \clink{\href{https://github.com/asmorodinov/asmorodinov.github.io}{[github.com/asmorodinov/asmorodinov.github.io]}}
+            Javascript
+            \item Случайная генерация разбиения ромба на домино (random diamond tilings) \newline \footnotesize \clink{\href{https://jsfiddle.net/asmorodinov/afzqwmht/213/show}{[jsfiddle.net/asmorodinov/afzqwmht/213/show]}} \newline
+            Javascript
+            
+            \item 3d игра в жанре roguelike от первого лица \newline Проект далёк от завершения, код возможно будет доступен позже, но пока что репозиторий с проектом приватный. \newline 
+            C++
+        \end{itemize}
+    }
+    \csection{Хобби и интересы}{\small
+        \begin{itemize}
+            \item 3d графика
+            \item программирование игр
+            \item какое-то время увлекался созданием электронных проектов на базе arduino/esp8266/esp32 контроллеров
+        \end{itemize}
+    }
+}
+
+\end{tabularx}
+\end{center}
+\end{document}
