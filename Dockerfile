@@ -2,6 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update && apt-get install --yes --no-install-recommends \
 	texlive-fonts-recommended \
+	texlive-fonts-extra \
 	texlive-generic-recommended \
 	texlive-latex-recommended \ 
 	texlive-latex-extra \
