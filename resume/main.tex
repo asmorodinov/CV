@@ -1,25 +1,33 @@
 \documentclass{resume}
 
+\usepackage{dejavu}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,      
+	urlcolor=blue,
+}
+
+\urlstyle{same}
+
 \begin{document}
 
-\fontfamily{ppl}\selectfont
-
 \noindent
-\begin{tabularx}{\linewidth}{@{}m{0.8\textwidth} m{0.2\textwidth}@{}}
+\begin{tabularx}{\linewidth}{@{}m{0.82\textwidth} m{0.18\textwidth}@{}}
 {
-    \Large{Александр Смородинов} \newline
+    \large{Смородинов Александр Андреевич} \newline
     \small{
         \clink{
             \href{mailto:asmorodinov66@gmail.com}{asmorodinov66@gmail.com} \textbf{·} 
-            \href{https://github.com/asmorodinov}{github.com/asmorodinov} \textbf{·} \newline
-            \href{https://t.me/asmorodinov}{telegram: @asmorodinov}
+            \href{https://github.com/asmorodinov}{github.com/asmorodinov} \textbf{·} 
+            \href{https://t.me/asmorodinov}{tg: @asmorodinov}
         } \newline
         Москва, Россия
     }
 } & 
 {
     \hfill
-    \includegraphics[width=2.8cm]{images/gr.png}
+    \includegraphics[width=2.95cm]{images/photo.jpg}
 }
 \end{tabularx}
 
@@ -30,14 +38,17 @@
     \csection{Опыт работы}{\small
         \begin{itemize}
             % item 1 %
-            \item \frcontent{Пока что нулевой}{}{}{}
-            
+            \item Стажировка в \href{https://luden.io/}{luden.io}, лето 2021
+            \item Работа над игрой \href{https://luden.io/craftomation/}{Craftomation 101} в \href{https://luden.io/}{luden.io}, зима 2021-2022
+            \item Стажировка в \href{https://luden.io/}{luden.io}, лето 2022
         \end{itemize}
     }
     \csection{Образование}{\small
         \begin{itemize}
             % item 1 %
-            \item \frcontent{Студент 2 курса Факультета Компьютерных Наук} {Прикладная Математика и Информатика}{НИУ ВШЭ}{}{2019-2023}
+            \item \frcontent{Студент 4 курса ФКН} {Прикладная Математика и Информатика}{Распределенные системы}{НИУ ВШЭ}{2019-2023}
+            \item \frcontent{Курсы по языкам Rust и Golang}{}{}{ШАД}{2021-2022}
+            \item Окончил ГБОУ \small{Лицей ''Вторая школа''} \newline 2019
         \end{itemize}
     }
     \csection{Достижения}{\small
@@ -45,15 +56,15 @@
             % item 1 %
             \item \frcontent{Всероссийская олимпиада школьников по математике}{участник заключительного этапа}{}{2019}
             % item 2 %
-            \item \frcontent{Турнир Городов (международная математическая олимпиада)}{State of Engineering}{3 диплом}{2019}
+            \item \frcontent{Турнир Городов (международная математическая олимпиада)}{}{3 диплом}{2019}
             % item 3 %
             \item \frcontent{Московская математическая олимпиада школьников}{2 диплом}{}{2019}
         \end{itemize}
     }
 	\csection{Хобби и интересы}{\small
 		\begin{itemize}
-			\item 3d графика
-			\item программирование игр
+			\item 3D графика
+			\item Программирование игр
 		\end{itemize}
 	}
 } 
@@ -63,30 +74,29 @@
 {
     \csection{Навыки}{\small
         \begin{itemize}
+            \item \textbf{Языки программирования} \newline
+            {\footnotesize C/C++, GNU assembler x86, Rust, Golang, Python, Lua, Javascript, SQL}
             \item \textbf{Технологии} \newline
-            {\footnotesize C/C++, GNU assembler x86, Python, Javascript(немного знаю), SQL(тоже немного знаю)}{}{}
-            \item \textbf{Библиотеки} \newline
-            {\footnotesize GLFW, Bullet physics, entt, assimp}{}{}
+            {\footnotesize Docker, TCP, UDP, gRPC, RabbitMQ, AMQP, Redis, REST API, GraphQL}
+            \item \textbf{C++ Библиотеки} \newline
+            {\footnotesize GLFW, GLAD, Dear ImGui, Assimp, SFML, Bullet Physics, EnTT}
+            
         \end{itemize}
     }
     \csection{Проекты}{
         \begin{itemize}
-            \item 3d рендерер с нуля \newline \footnotesize \clink{\href{http://github.com/asmorodinov/3d-renderer-from-scratch}{[github.com/asmorodinov/3d-renderer-from-scratch]}}
-            Университетский курсовой проект, на данный момент ещё не завершён, планируется довольно значительный рефакторинг кода и изменение некоторых частей архитектуры.
-            (в репозитории dev ветка довольно сильно опережает main ветку) \newline
-            C++
-            \item Клон игры Астероиды \newline \footnotesize \clink{\href{https://asmorodinov.github.io}{[asmorodinov.github.io]}} \newline
-            \footnotesize \clink{\href{https://github.com/asmorodinov/asmorodinov.github.io}{[github.com/asmorodinov/asmorodinov.github.io]}}
+            \item \small 3D рендерер \newline \footnotesize \clink{\href{https://github.com/asmorodinov/3d-renderer-from-scratch}{github.com/asmorodinov/3d-renderer-from-scratch}}
+           	Проект был написан в рамках курсовых работ 2 и 3 курса.
+            На 2 курсе был реализован программный 3D рендерер с нуля, с минимальным количеством сторонних библиотек, а на 3 курсе была добавлена поддержка более продвинутых алгоритмов отрисовки. \newline C++
+            
+            \item \small Сетевая игра мафия \newline \footnotesize \clink{\href{https://github.com/asmorodinov/mafia_graphql_service}{github.com/asmorodinov/mafia\_graphql\_service}}
+            Проект был реализован в качестве домашних заданий по курсу ''Сервис-ориентированные архитектуры'' (3 курс ФКН).
+           	В игре есть голосовой чат, регистрация пользователей через REST сервис. Пользователи могут редактировать свои профили и получать статистику по играм в формате PDF. GraphQL сервис позволяет просматривать список игр и добавлять комментарии к играм.  \newline Python, Go
+            
+            \item \small Клон игры Астероиды \newline \footnotesize \clink{\href{https://asmorodinov.github.io}{asmorodinov.github.io}} \newline
+            \footnotesize \clink{\href{https://github.com/asmorodinov/asmorodinov.github.io}{github.com/asmorodinov/asmorodinov.github.io}}
             Школьный проект, писался на уроках информатики в 11 классе за пару недель. \newline
             Javascript
-            \item Случайная генерация разбиения ромба на домино (random diamond tilings) \newline \footnotesize \clink{\href{https://jsfiddle.net/asmorodinov/afzqwmht/213/show}{[jsfiddle.net/asmorodinov/afzqwmht/213/show]}} \newline
-            Просто реализация одного алгоритма на js, проект был написан под впечатлением от достаточно интересного математического видео по данной теме.
-            Javascript
-            
-            \item 3d игра в жанре roguelike от первого лица \newline 
-            Достаточно объёмный проект, написан на c++ без использования готовых игровых движков. \newline
-            Игра ещё далека от завершения, код пока что не доступен, но возможно появится позже. \newline 
-            C++
         \end{itemize}
     }
 }

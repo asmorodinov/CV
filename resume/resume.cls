@@ -12,6 +12,9 @@
 \usepackage{graphicx}
 \usepackage{outlines}
 
+\usepackage{xcolor}
+
+
 \setlist[itemize]{leftmargin=*}
 \linespread{1.15}
 \geometry{a4paper,
@@ -30,7 +33,7 @@
 }{}
 \newenvironment{frcontent}[4]{
     {
-        \textbf{#1} \leavevmode\newline
+        {\small{#1}} \leavevmode\newline
         {\footnotesize	
             \ifthenelse{\equal{#2}{}}{}{{#2 \leavevmode\newline}}
             \ifthenelse{\equal{#3}{}}{}{{#3 \leavevmode\newline}}
